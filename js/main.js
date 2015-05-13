@@ -137,6 +137,7 @@ document.addEventListener('touchmove' , function (ev){
 
 		function _loading(){
 			var loader = new WxMoment.Loader();
+			
 			    //添加一个资源
 			    loader.addImage('../imgs/active_trace.png');
 			    loader.addImage('../imgs/bg.jpg');
