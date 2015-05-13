@@ -27,14 +27,7 @@
 
 <div id="dreambox">
 
-<div id="mask">
-	<div class="active_trace">
-		<img src="imgs/active_trace.png" />
-		<div class="hand">
-			<img src="imgs/hand.png" />
-		</div>
-	</div>
-</div>
+
 
 <a href="javascript:;" class="logo">
 	<img src="imgs/logo.png" />
@@ -42,12 +35,20 @@
 
 <div class="container" id="home">
 
+	<div id="mask"></div>
+
 	<div class="slogan_en">
 		<img src="imgs/slogan_en.png" />
 	</div>
 
 	<div class="p_animate" id="touch">
-		<div class="ring" id="ring2"></div>
+		<div class="active_trace">
+			<img src="imgs/active_trace.png" />
+			<div class="hand">
+				<img src="imgs/hand.png" />
+			</div>
+		</div>
+		<div class="ring_home" id="ring_home"></div>
 	</div>
 	<!--<div class="videoposter"></div>
 	<div class="vpause"></div>
@@ -60,7 +61,7 @@
 </div>
 
 
-<div class="container" id="video" style="display:none;">
+<div class="container" id="video">
 
 	<div class="slogan_en videoText">
 		<p>姚晨携手陈哲艺拍摄伯爵艺术大片<br />
@@ -85,7 +86,7 @@
 
 	<div class="footer">
 		<p>
-			<a href="http://www.baidu.com" class="join_btn">
+			<a href="javascript:;" class="join_btn">
 				<img src="imgs/join_btn.png" />
 			</a>
 		</p>
@@ -102,15 +103,7 @@
 
 <script src="http://imgcache.gtimg.cn/tencentvideo_v1/tvp/js/tvp.player_v2.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-    var piaget = new Piaget({
-    	htrace: "#mask",
-        test: "1"
-    });
-})
-</script>
+
 
 
 <!-- 横屏代码 -->
