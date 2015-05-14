@@ -24,7 +24,7 @@ document.addEventListener('touchmove' , function (ev){
 		        'desc': "你教会了我人生中的所有美好，感谢你，妈妈"
 		    },
 		    'global': {
-		        'img_url': basePath + "/images/kv.jpg",
+		        'img_url': basePath + "/imgs/share.jpg",
 		        'link': window.location.href.split("?")[0].replace(/([&|\?]{1})ticket=[\w\-]+(&?)/, '$1').replace(/\?$/, '')
 		    }
 		});
