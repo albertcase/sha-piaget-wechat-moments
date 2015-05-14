@@ -120,7 +120,6 @@ document.addEventListener('touchmove' , function (ev){
 			videoFun(1);
 		    $(".container").hide().css({"opacity":0});
 		    $("#video").show().animate({"opacity":1},1200);
-	        event.preventDefault();
 		}
 
 		var anim_home = document.getElementById("ring_home");
