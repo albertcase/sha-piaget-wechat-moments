@@ -398,6 +398,10 @@ position: absolute;
       margin-top: 6%;
     }
 
+    .p_animate{
+      margin: 14% 0;
+    }
+
     .slogan_en img, .slogan_cn img{
       width:50%;
     }
