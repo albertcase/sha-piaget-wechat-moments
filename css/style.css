@@ -93,7 +93,7 @@ html,body{
   /*background: url("../imgs/pro.png") -650px top no-repeat;
   background-size: auto 100%;
   overflow: hidden;*/
-  margin: 12% 0;
+  margin: 17% 0;
   position: relative;
 }
 
@@ -363,11 +363,11 @@ position: absolute;
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
     .logo{
-      margin: 12% 0 10% 0;
+      margin: 14% 0 10% 0;
     }
 
     .p_animate{
-      margin: 18% 0;
+      margin: 20% 0;
     }
 
     .btn_tips{
