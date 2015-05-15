@@ -70,8 +70,13 @@ html,body{
   display: inline-block;
 }
 
-.slogan_en img,.slogan_cn img{
-  width:70%;
+.slogan_en img{
+  width: 80%;
+  display: inline-block;
+}
+
+.slogan_cn img{
+  width:67%;
   display: inline-block;
 }
 
@@ -93,7 +98,7 @@ html,body{
   /*background: url("../imgs/pro.png") -650px top no-repeat;
   background-size: auto 100%;
   overflow: hidden;*/
-  margin: 17% 0;
+  margin: 12% 0;
   position: relative;
 }
 
@@ -141,7 +146,7 @@ html,body{
   width:100%;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 2.2%;
   text-align: center;
 }
 
@@ -177,10 +182,13 @@ html,body{
 }
 
 .active_tips{
-  width: 34%;
+  width: 50%;
   display: inline-block;
   margin: 5.5% 14% 0 0;
   vertical-align: top;
+  line-height: 20px;
+  font-size: 14px;
+  color: #fff;
 }
 
 .routeAni{
@@ -363,12 +371,12 @@ position: absolute;
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
     .logo{
-      margin: 14% 0 10% 0;
+      margin: 13% 0 10% 0;
     }
 
-    .p_animate{
-      margin: 20% 0;
-    }
+    /*.p_animate{
+      margin: 12% 0;
+    }*/
 
     .btn_tips{
       margin: 4% 0 0 0;
@@ -382,8 +390,12 @@ position: absolute;
 
 
 @media handheld and (min-height: 400px), screen and (max-height: 420px) {
-    #home .slogan_en img, #home .slogan_cn img{
+    #home .slogan_en img{
       width:70%;
+    }
+
+     #home .slogan_cn img{
+      width:60%;
     }
 
     .logo{
@@ -399,12 +411,17 @@ position: absolute;
     }
 
     .p_animate{
-      margin: 14% 0;
+      margin: 8% 0;
     }
 
-    .slogan_en img, .slogan_cn img{
-      width:50%;
+    .slogan_en img{
+      width: 70%;
     }
+
+    .slogan_cn img{
+      width:30%;
+    }
+
 
     .videoText{
       font-size: 12px;

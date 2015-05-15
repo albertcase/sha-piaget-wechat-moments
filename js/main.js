@@ -16,12 +16,12 @@ document.addEventListener('touchmove' , function (ev){
 		new WxMoment.Share({
 		    //分享到朋友圈
 		    'moment': {
-		        'title': "母亲节，感谢人生的第一位导师"
+		        'title': "姚晨与陈哲艺擦出了怎样的艺术火花？跟我一起欣赏他们的新片吧！"
 		    },
 		    //分享给好友
 		    'friend': {
-		        'title': "母亲节，感谢人生的第一位导师",
-		        'desc': "你教会了我人生中的所有美好，感谢你，妈妈"
+		        'title': "姚晨与陈哲艺擦出了怎样的艺术火花？跟我一起欣赏他们的新片吧！",
+		        'desc': "姚晨与陈哲艺擦出了怎样的艺术火花？跟我一起欣赏他们的新片吧！"
 		    },
 		    'global': {
 		        'img_url': basePath + "/imgs/share.jpg",
@@ -53,7 +53,10 @@ document.addEventListener('touchmove' , function (ev){
 
 
         var vidArr = ["m0151xu7izy","b001672wkoe","a0016gys8ct"];
-        var vPic = ["http://www.baidu.com/img/bdlogo.png","../imgs/poster.jpg","http://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Ross_Perot_Allan_Warren.jpg/167px-Ross_Perot_Allan_Warren.jpg"]
+        var vPic = ["../imgs/poster1.jpg","../imgs/poster2.jpg","../imgs/poster3.jpg"]
+        var vText = ["","姚晨携手陈哲艺拍摄伯爵艺术大片<br />独家花絮抢先观看",""]
+        var ringTips = ["上转：观赏姚晨短片花絮<br />下转：开启全球广告大片","上转：观赏伯爵艺术短片<br />下转：开启全球广告大片","上转：观赏伯爵艺术短片<br />下转：开启姚晨短片花絮"]
+
 		var player;
 		var videoWidth = document.body.clientWidth;
 		var videoHeight = videoWidth * (1080 / 1920);
@@ -72,6 +75,8 @@ document.addEventListener('touchmove' , function (ev){
 				modId:"mod_player" //mod_player是刚刚在页面添加的div容器 autoplay:true
 			});
 
+			$(".videoText p").html(vText[n]);
+			$(".active_tips").html(ringTips[n]);
 		}
 
 
@@ -145,13 +150,16 @@ document.addEventListener('touchmove' , function (ev){
 			    loader.addImage('../imgs/handTips.png');
 			    loader.addImage('../imgs/holder_bg.jpg');
 			    loader.addImage('../imgs/join_btn.png');
-			    loader.addImage('../imgs/poster.jpg');
+			    loader.addImage('../imgs/poster1.jpg');
+			    loader.addImage('../imgs/poster2.jpg');
+			    loader.addImage('../imgs/poster3.jpg');
 			    loader.addImage('../imgs/logo.png');
 			    loader.addImage('../imgs/pro.png');
 			    loader.addImage('../imgs/pro-home.png');
 			    loader.addImage('../imgs/slide_tips.png');
 			    loader.addImage('../imgs/slogan_cn.png');
 			    loader.addImage('../imgs/slogan_en.png');
+			    loader.addImage('../imgs/share.jpg');
 
 			    //监听资源加载完成事件
 			    loader.addCompletionListener(function () {
