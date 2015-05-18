@@ -52,10 +52,10 @@ document.addEventListener('touchmove' , function (ev){
 
 
 
-        var vidArr = ["m0151xu7izy","b001672wkoe","a0016gys8ct"];
+        var vidArr = ["w01532yij0g","b01533qe12n","i0153yonvs6"];
         var vPic = ["../imgs/poster1.jpg","../imgs/poster2.jpg","../imgs/poster3.jpg"]
         var vText = ["","姚晨携手陈哲艺拍摄伯爵艺术大片<br />独家花絮抢先观看",""]
-        var ringTips = ["上转：观赏姚晨短片花絮<br />下转：开启全球广告大片","上转：观赏伯爵艺术短片<br />下转：开启全球广告大片",""]
+        var ringTips = ["上转：观赏姚晨短片花絮","上转：开启全球广告大片<br />下转：观赏伯爵艺术大片",""]
 
 		var player;
 		var videoWidth = document.body.clientWidth;
@@ -182,8 +182,8 @@ document.addEventListener('touchmove' , function (ev){
 
 				loader.addProgressListener(function(e) {
 						var percent = Math.round( e.completedCount / e.totalCount * 100 );
-						$(".loading").css({"width":percent+"%"});
-						$(".loading").html(percent+"%");
+						//$(".loading").css({"width":percent+"%"});
+						$(".process").css({"width": percent+"%"});
 				});
 				
 			    //启动资源加载管理器

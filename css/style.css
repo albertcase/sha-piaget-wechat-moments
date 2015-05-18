@@ -299,16 +299,47 @@ position: absolute;
 
 
 .loading{
-    width: 0;
+    width: 100%;
     text-align: center;
     position: fixed;
-    left: 50%;
-    top:50%;
-    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    background: url("../imgs/bg.jpg") center top no-repeat;
+    background-size: 100% 100%;
     z-index: 10;
-    margin: -27% 0 0 -50%;
-    padding: 2px 0;
+    height:100%;
 }
+
+.loading_con{
+  width:70%;
+  display: inline-block;
+  margin: 15em 0 0 0; 
+}
+
+.loading_con img{
+  width: 60%;
+  margin-bottom: 1.6em;
+  display: inline-block;
+}
+
+.loading_bg{
+  width:200px;
+  height: 50px;
+  background: url("../imgs/loading-gray.png") left center no-repeat;
+  background-size: 200px auto;
+  display:inline-block;
+  text-align: left;
+}
+
+.process{
+  width:0;
+  height: 50px;
+  background: url("../imgs/loading_white.png") left center no-repeat;
+  background-size: 200px auto;
+  display:inline-block;
+  overflow: hidden;
+}
+
 
 
 
